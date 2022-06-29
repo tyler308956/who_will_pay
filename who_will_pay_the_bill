@@ -1,0 +1,11 @@
+import random
+
+names = input("What are the names of the people in your party? ")
+
+list = names.split(",")
+
+person_who_pays = random.randint(0,len(list)-1)
+
+payer = list[person_who_pays]
+
+print(f"{payer} will pay the bill!")
